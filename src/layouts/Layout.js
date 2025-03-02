@@ -1,14 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import FloatingCart from "../components/Cart/FloatingCart"; 
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
-      <main>{children}</main>
+      {children}
       <Footer />
-    </div>
+      <FloatingCart /> 
+    </>
   );
 };
 
